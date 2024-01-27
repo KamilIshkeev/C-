@@ -44,6 +44,7 @@ namespace WpfApp2
                 password1.Clear();
                 login1.Clear();
                 ListBoxRefresh();
+        
             }
         }
 

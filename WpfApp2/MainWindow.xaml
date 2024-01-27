@@ -13,13 +13,15 @@
             <ColumnDefinition Width="621*"/>
             <ColumnDefinition Width="128*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Name="login1" HorizontalAlignment="Left" Margin="41,37,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="120" TextChanged="login1_TextChanged" Grid.ColumnSpan="3"/>
+        <TextBox Name="login1" HorizontalAlignment="Left" Margin="41,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="login1_TextChanged" Grid.ColumnSpan="3"/>
         <ListBox x:Name="User1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="378,27,65,10" SelectionChanged="User1_SelectionChanged" Grid.Column="2"/>
-        <TextBox Name="password1" HorizontalAlignment="Left" Margin="41,60,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="120" TextChanged="password1_TextChanged" Grid.ColumnSpan="3"/>
+        <TextBox Name="password1" HorizontalAlignment="Left" Margin="41,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="password1_TextChanged" Grid.ColumnSpan="3"/>
         <ListBox x:Name="comand1"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="561,27,10,10" SelectionChanged="comand1_SelectionChanged" Grid.ColumnSpan="2" Grid.Column="2"/>
-        <Button Content="Записать" HorizontalAlignment="Left" Height="61" Margin="3,342,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1" Grid.Column="2" FontWeight="Bold" FontSize="20"/>
+        <Button Content="Записать&#xD;&#xA;пользователя" HorizontalAlignment="Left" Height="61" Margin="0,353,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1" Grid.Column="1" FontWeight="Bold" FontSize="20" Grid.ColumnSpan="2"/>
         <Label Grid.Column="2" Content="Команда " Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="20" Margin="561,7,0,0" VerticalAlignment="Top" Width="178" FontSize="8" RenderTransformOrigin="0.496,0.402"/>
         <Label Grid.Column="2" Content="Участники" HorizontalAlignment="Left" Height="20" Margin="378,7,0,0" VerticalAlignment="Top" Width="178" FontSize="8" RenderTransformOrigin="0.496,0.402"/>
+        <Button Content="Записать команду" HorizontalAlignment="Left" Height="46" Margin="177,368,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click_1" Grid.Column="2" FontWeight="Bold" FontSize="16"/>
+        <ListBox x:Name="User1_Copy" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,114,452,175" SelectionChanged="User1_SelectionChanged" Grid.Column="1" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
